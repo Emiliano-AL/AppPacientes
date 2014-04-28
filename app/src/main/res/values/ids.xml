@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnPacientes" type="id">btnPacientes</item>
+    <item name="btnGlucosa" type="id">btnGlucosa</item>
+    <item name="btnHistorial" type="id">btnHistorial</item>
+    <item name="btnAcercaDe" type="id">btnAcercaDe</item>
+    <item name="txtPaciente" type="id">txtPaciente</item>
+    <item name="btnGuardarPaciente" type="id">btnGuardarPaciente</item>
+    <item name="spnSexo" type="id">spnSexo</item>
+    <item name="spnTipoSangre" type="id">spnTipoSangre</item>
+    <item name="editNombre" type="id">editNombre</item>
+    <item name="editEdad" type="id">editEdad</item>
+    <item name="editPeso" type="id">editPeso</item>
+    <item name="editAltura" type="id">editAltura</item>
+    <item name="txtInfoPaciente" type="id">txtInfoPaciente</item>
+</resources>

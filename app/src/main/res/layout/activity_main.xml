@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:padding="30dip"
+    android:orientation="vertical"
+    tools:context="com.lania.pacientesapp.app.MainActivity">
+
+    <TextView
+        android:text="@string/tituloApp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/btnGlucosa"
+        android:text="@string/btnGlucosa"
+        android:layout_above="@id/btnHistorial"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/btnHistorial"
+        android:text="@string/btnHistorial"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/btnAcercaDe"
+        android:text="@string/btnAcercaDe"
+        android:layout_below="@id/btnHistorial"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/btnPacientes"
+        android:text="@string/btnPacientes"
+        android:layout_above="@id/btnGlucosa"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
