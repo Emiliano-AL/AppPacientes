@@ -36,6 +36,13 @@
         android:layout_height="wrap_content"
         android:id="@id/btnAcercaDe"
         android:text="@string/btnAcercaDe"
+        android:layout_below="@id/btnPresion"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPresion"
+        android:id="@id/btnPresion"
         android:layout_below="@id/btnHistorial"
         android:layout_alignParentLeft="true" />
     <Button

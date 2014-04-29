@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dip"
+    tools:context="com.lania.pacientesapp.app.Glucosa">
+
+    <TextView
+        android:text="@string/tituloGlucosa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTiempo"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="146dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/spnTiempo"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/textView2"
+        android:entries="@array/tiempo_glucosa_list"
+        android:layout_alignLeft="@id/btnGuardarGlucosa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblGlucosa"
+        android:textSize="18sp"
+        android:id="@+id/textView3"
+        android:layout_above="@id/spnTiempo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/txtGlucosa"
+        android:layout_alignBottom="@+id/textView3"
+        android:inputType="text"
+        android:layout_alignLeft="@id/btnGuardarGlucosa"
+        android:layout_alignRight="@id/spnTiempo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnGuardar"
+        android:id="@id/btnGuardarGlucosa"
+        android:layout_below="@id/spnTiempo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+</RelativeLayout>

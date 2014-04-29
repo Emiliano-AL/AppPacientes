@@ -61,7 +61,8 @@ public class MainActivity extends Activity {
     }
 
     public void mostrarGlucosaView(){
-
+        Intent i = new Intent(this, Glucosa.class);
+        startActivity(i);
     }
 
     public void mostrarHistorialView(){

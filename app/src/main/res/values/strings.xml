@@ -18,11 +18,11 @@
     <string name="txtPeso">Peso:</string>
     <string name="txtAltura">Altura:</string>
     <string name="btnGuardarPaciente">Guardar datos</string>
+
     <string-array name="sexo_list">
         <item>Hombre</item>
         <item>Mujer</item>
     </string-array>
-
     <string-array name="tipo_sangre_list">
         <item>O+</item>
         <item>O-</item>
@@ -30,5 +30,30 @@
         <item>A</item>
         <item>B</item>
     </string-array>
+
+    <string name="title_activity_glucosa">Glucosa</string>
+    <string name="tituloGlucosa">Glucosa en la sangre</string>
+    <string name="lblGlucosa">Glucosa:</string>
+    <string name="lblTiempo">Tiempo:</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="txtPresion">Presión Arterial</string>
+
+    <string-array name="tiempo_glucosa_list">
+        <item>Antes del desayuno</item>
+        <item>Antes de la comida</item>
+        <item>Antes de la cena</item>
+        <item>Antes de dormir</item>
+    </string-array>
+
+    <string name="title_activity_presion_arterial">PresionArterial</string>
+    <string name="txtTituloPresion"/>
+    <string name="txtTituPresion">Presión arterial</string>
+    <string name="chkDerecho">Brazo derecho</string>
+    <string name="chkIzquierdo">Brazo izquierdo</string>
+    <string name="btnHora">Hora chequeo</string>
+    <string name="btnFecha">Fecha chequeo</string>
+    <string name="btnGuardarPresion">Guardar presion arterial</string>
+    <string name="lblSistolica">Sistólica:</string>
+    <string name="lblDiastolica">Diastólica:</string><string name="lblBrazo">Brazo del que se tomo la muestra:</string>
 
 </resources>
