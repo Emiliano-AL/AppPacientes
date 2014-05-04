@@ -65,7 +65,7 @@
         android:orientation="vertical"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:id="@+id/radioGroup">
+        android:id="@id/rGarm">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,16 +83,15 @@
         android:layout_height="wrap_content"
         android:text="@string/btnHora"
         android:id="@id/btnHora"
-        android:layout_below="@+id/radioGroup"
+        android:layout_below="@id/rGarm"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="42dp"
-        android:onClick="showTimePickerDialog"/>
+        android:layout_marginTop="42dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnFecha"
-        android:id="@+id/button2"
+        android:id="@id/btnFecha"
         android:layout_alignTop="@id/btnHora"
         android:layout_alignRight="@id/txtDiastonica" />
 
@@ -100,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnGuardarPresion"
-        android:id="@+id/button3"
+        android:id="@id/btnSavePresion"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 

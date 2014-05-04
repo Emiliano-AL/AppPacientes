@@ -12,5 +12,5 @@
     <item name="editEdad" type="id">editEdad</item>
     <item name="editPeso" type="id">editPeso</item>
     <item name="editAltura" type="id">editAltura</item>
-    <item name="txtInfoPaciente" type="id">txtInfoPaciente</item><item name="txtGlucosa" type="id">txtGlucosa</item><item name="spnTiempo" type="id">spnTiempo</item><item name="btnGuardarGlucosa" type="id">btnGuardarGlucosa</item><item name="btnPresion" type="id">btnPresion</item><item name="chkDer" type="id">chkDer</item><item name="chkIzq" type="id">chkIzq</item><item name="btnHora" type="id">btnHora</item><item name="txtSistolica" type="id">txtSistolica</item><item name="txtDiastonica" type="id">txtDiastonica</item>
+    <item name="txtInfoPaciente" type="id">txtInfoPaciente</item><item name="txtGlucosa" type="id">txtGlucosa</item><item name="spnTiempo" type="id">spnTiempo</item><item name="btnGuardarGlucosa" type="id">btnGuardarGlucosa</item><item name="btnPresion" type="id">btnPresion</item><item name="chkDer" type="id">chkDer</item><item name="chkIzq" type="id">chkIzq</item><item name="btnHora" type="id">btnHora</item><item name="txtSistolica" type="id">txtSistolica</item><item name="txtDiastonica" type="id">txtDiastonica</item><item name="btnFecha" type="id">btnFecha</item><item name="btnSavePresion" type="id">btnSavePresion</item><item name="rGarm" type="id">rGarm</item>
 </resources>

@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
     private Button btnGlucosa;
     private Button btnHistorial;
     private Button btnAcerca;
+    private Button btnPresion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends Activity {
         btnGlucosa = (Button) findViewById(R.id.btnGlucosa);
         btnHistorial = (Button) findViewById(R.id.btnHistorial);
         btnAcerca = (Button) findViewById(R.id.btnAcercaDe);
+        btnPresion = (Button) findViewById(R.id.btnPresion);
 
         btnPacientes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +55,13 @@ public class MainActivity extends Activity {
             }
         });
 
+        btnPresion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mostrarPresionView();
+            }
+        });
+
     }
 
     public void mostrarPacientesView(){
@@ -73,6 +82,10 @@ public class MainActivity extends Activity {
 
     }
 
+    public void mostrarPresionView(){
+        Intent i = new Intent(this, PresionArterial.class);
+        startActivity(i);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
