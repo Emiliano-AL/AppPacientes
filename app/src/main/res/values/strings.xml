@@ -4,7 +4,7 @@
     <string name="app_name">PacientesApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="tituloApp">Sisema de monitoreo de Diabetes</string>
+    <string name="tituloApp">Sistema de monitoreo de Diabetes</string>
     <string name="btnPacientes">Pacientes</string>
     <string name="btnGlucosa">Glucosa</string>
     <string name="btnHistorial">Historial</string>
@@ -46,7 +46,7 @@
     </string-array>
 
     <string name="title_activity_presion_arterial">PresionArterial</string>
-    <string name="txtTituloPresion"/>
+    <string name="txtTituloPresion"></string>
     <string name="txtTituPresion">Presión arterial</string>
     <string name="chkDerecho">Brazo derecho</string>
     <string name="chkIzquierdo">Brazo izquierdo</string>
@@ -54,6 +54,11 @@
     <string name="btnFecha">Fecha chequeo</string>
     <string name="btnGuardarPresion">Guardar presion arterial</string>
     <string name="lblSistolica">Sistólica:</string>
-    <string name="lblDiastolica">Diastólica:</string><string name="lblBrazo">Brazo del que se tomo la muestra:</string>
+    <string name="lblDiastolica">Diastólica:</string>
+    <string name="lblBrazo">Brazo del que se tomo la muestra:</string>
+    <string name="title_activity_historial">Historial</string>
+    <string name="lblHistorial">Historial del paciente</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
+    <string name="lblAcercaDe">Aplicación desarrollada por: ISC. Sinesio Ivan Carrillo Heredia. LI. Emiliano Anastasio Landa </string>
 
 </resources>

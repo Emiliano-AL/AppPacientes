@@ -75,11 +75,13 @@ public class MainActivity extends Activity {
     }
 
     public void mostrarHistorialView(){
-
+        Intent i = new Intent(this, Historial.class);
+        startActivity(i);
     }
 
     public void mostrarbtnAcercaView(){
-
+        Intent i = new Intent(this, AcercaDe.class);
+        startActivity(i);
     }
 
     public void mostrarPresionView(){

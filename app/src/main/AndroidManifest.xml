@@ -30,6 +30,15 @@
             android:name="com.lania.pacientesapp.app.PresionArterial"
             android:label="@string/title_activity_presion_arterial" >
         </activity>
+        <activity
+            android:name="com.lania.pacientesapp.app.Historial"
+            android:label="@string/title_activity_historial" >
+        </activity>
+        <activity
+            android:name="com.lania.pacientesapp.app.AcercaDe"
+            android:label="@string/title_activity_acerca_de"
+            android:theme="@android:style/Animation.Dialog">
+        </activity>
     </application>
 
 </manifest>
