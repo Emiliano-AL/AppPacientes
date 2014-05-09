@@ -50,8 +50,8 @@
     <string name="txtTituPresion">Presión arterial</string>
     <string name="chkDerecho">Brazo derecho</string>
     <string name="chkIzquierdo">Brazo izquierdo</string>
-    <string name="btnHora">Hora chequeo</string>
-    <string name="btnFecha">Fecha chequeo</string>
+    <string name="btnHora">Hora</string>
+    <string name="btnFecha">Fecha</string>
     <string name="btnGuardarPresion">Guardar presion arterial</string>
     <string name="lblSistolica">Sistólica:</string>
     <string name="lblDiastolica">Diastólica:</string>

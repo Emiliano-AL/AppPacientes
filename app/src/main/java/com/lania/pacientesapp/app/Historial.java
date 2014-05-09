@@ -26,6 +26,8 @@ public class Historial extends Activity {
         setContentView(R.layout.activity_historial);
 
         lstHistorial = (ListView) findViewById(R.id.lstHistorial);
+        HistorialLst task = new HistorialLst();
+        task.execute();
     }
 
 
@@ -49,27 +51,30 @@ public class Historial extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    private class TareaWSListar extends AsyncTask<String,Integer,Boolean> {
+    private class HistorialLst extends AsyncTask<String,Integer,Boolean> {
         private String[] historial;
         protected Boolean doInBackground(String... params) {
             boolean resul = true;
             HttpClient httpClient = new DefaultHttpClient();
-            HttpGet del = new HttpGet("http://10.0.2.2/WebServiceRestAndroid/Presion/Get");
+            HttpGet del = new HttpGet("http://10.0.2.2/WebServiceRestAndroid/Presion/Get/1");
             del.setHeader("content-type", "application/json");
             try
             {
                 HttpResponse resp = httpClient.execute(del);
                 String respStr = EntityUtils.toString(resp.getEntity());
+                //JSONObject obj = new JSONObject(respStr);
                 JSONArray respJSON = new JSONArray(respStr);
                 historial = new String[respJSON.length()];
+                Log.e("ServicioRest","antes del if " + respJSON.length());
                 for(int i=0; i<respJSON.length(); i++)
                 {
                     JSONObject obj = respJSON.getJSONObject(i);
                     String fecha = obj.getString("Fecha");
                     String hora = obj.getString("Hora");
-                    String glucosa = obj.getString("Glucosa");
+                    String diastolica = obj.getString("Diastolica");
 
-                    historial[i] = "" + fecha + " - " + hora + " - " + glucosa;
+                    historial[i] = "" + fecha + " - " + hora + " - " + diastolica;
+                    Log.e("ServicioRest","En el historial " + historial[i]);
                 }
             }
             catch(Exception ex)

@@ -50,14 +50,7 @@
         android:layout_alignBottom="@+id/textView3"
         android:layout_alignLeft="@id/txtSistolica" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/lblBrazo"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="34dp" />
+
 
     <RadioGroup
         android:layout_width="fill_parent"

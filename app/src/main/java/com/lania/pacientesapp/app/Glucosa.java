@@ -40,7 +40,7 @@ public class Glucosa extends Activity {
             @Override
             public void onClick(View view) {
                 GlucosaAsync task = new GlucosaAsync();
-                task.execute(txtGlucosa.getText().toString(), String.valueOf(spsnTiempo.getSelectedItem()));
+                task.execute("1", txtGlucosa.getText().toString(), String.valueOf(spsnTiempo.getSelectedItem()));
             }
         });
     }
@@ -72,14 +72,15 @@ public class Glucosa extends Activity {
         protected Boolean doInBackground(String... params) {
             boolean result = true;
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost post = new HttpPost("http://10.0.2.2/WebServiceRestAndroid/Pacientes/add");
+            HttpPost post = new HttpPost("http://10.0.2.2/WebServiceRestAndroid/Glucosa/add");
             post.setHeader("content-type", "application/json");
             try
             {
                 //Se construye el jason con los datos del paciente
                 JSONObject glucosa = new JSONObject();
-                glucosa.put("Glucosa", params[0]);
-                glucosa.put("Tiempo", params[1]);
+                glucosa.put("PacienteId", params[0]);
+                glucosa.put("CantGlucosa", params[1]);
+                glucosa.put("Tiempo", params[2]);
 
                 StringEntity entity = new StringEntity(glucosa.toString());
                 post.setEntity(entity);

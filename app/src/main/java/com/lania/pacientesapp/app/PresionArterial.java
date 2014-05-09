@@ -92,7 +92,7 @@ public class PresionArterial extends Activity {
                 valueChk = ((RadioButton)findViewById(rgArm.getCheckedRadioButtonId())).getText().toString();
                 Log.i("ServicioRest", "Los valores que tenemos, fecha: " + date + " hora: "+ time + " Y el valor del check es.. " + valueChk);
                 PresionArterialAsync task = new PresionArterialAsync();
-                task.execute(txtSistolica.getText().toString(), txtDiastolica.getText().toString(), valueChk, time, date);
+                task.execute("1",txtSistolica.getText().toString(), txtDiastolica.getText().toString(), valueChk, time, date);
 
             }
         });
@@ -163,11 +163,12 @@ public class PresionArterial extends Activity {
             {
                 //Se construye el jason con los datos de la presion arterial
                 JSONObject arterial = new JSONObject();
-                arterial.put("Sistolica", params[0]);
-                arterial.put("Diastolica", params[1]);
-                arterial.put("Brazo", params[2]);
-                arterial.put("Hora", params[3]);
-                arterial.put("Fecha", params[4]);
+                arterial.put("PacienteId", params[0]);
+                arterial.put("Sistolica", params[1]);
+                arterial.put("Diastolica", params[2]);
+                arterial.put("Brazo", params[3]);
+                arterial.put("Hora", params[4]);
+                arterial.put("Fecha", params[5]);
 
                 StringEntity entity = new StringEntity(arterial.toString());
                 post.setEntity(entity);
